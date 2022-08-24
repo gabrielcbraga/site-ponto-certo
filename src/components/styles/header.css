@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #202020;
+    --black_light: #3B3B3B;
+    --black_dark: #080808;
+    --white: #F0F0F0;
+    --white_light: #D6D6D6;
+    --white_dark: #FFFFFF;
+    --red: #C21C34;
+    --red_light: #E1324B;
+    --red_dark: #981629;
+
+    --font_hindi: 'Hind', sans-serif;
+    --font_montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+}
+
+Link{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+}
+
+.logo-box{
+    margin-top: 22px;
+    margin-left: 1%;
+}
+
+.logo-box img{
+    width: 250px;
+    height: 61px;
+}
+
+.menu-box{
+    width: 100%;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.menu-box a{
+    padding-left: 10%;
+    font-family: var(--font_montserrat);
+    color: var(--black);
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        var(--red),
+        var(--red) 50%,
+        #000 50%
+      );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-box a:before {
+    content: '';
+    background: var(--red);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-box a:hover {
+    background-position: 0;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 1180px) {
+    .menu-box{
+        margin-left: 15%;
+        margin-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .menu-box{
+        margin-left: -60%;
+        margin-top: 16%;
+    }
+
+    .logo-box{
+        margin-left: 35%;
+        height: 61px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-box{
+        margin-left: -70%;
+        margin-top: 18%;
+    }
+
+    .logo-box{
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .menu-box{
+        display: none;
+    }
+
+    .logo-box{
+        margin-left: 18%; 
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-box{
+        display: none;
+    }
+
+    .logo-box{
+        margin-left: 16%; 
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo-box{
+        margin-left: 12%; 
+    }
+}

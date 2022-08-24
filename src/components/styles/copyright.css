@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #202020;
+    --black_light: #3B3B3B;
+    --black_dark: #080808;
+    --white: #F0F0F0;
+    --white_light: #D6D6D6;
+    --white_dark: #FFFFFF;
+    --red: #C21C34;
+    --red_light: #E1324B;
+    --red_dark: #981629;
+
+    --font_hindi: 'Hind', sans-serif;
+    --font_montserrat: 'Montserrat', sans-serif;
+}
+
+.copyright {
+    width: 100%;
+    height: 100px;
+    background-color: var(--black);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.copyright-text{
+    max-width: 25%;
+    margin-left: -2%;
+}
+
+.copyright-text h2{
+    font-family: var(--font_montserrat);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.copyright-social-media{
+    display: flex;
+}
+
+.copyright-social-media img{
+    width: 30px;
+}
+
+.copyright-social-media-whatsapp{
+    margin-right: 15px;
+}
+
+.copyright-social-media-instagram{
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .copyright-text{
+        max-width: 35%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    .copyright-text{
+        max-width: 40%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .copyright-text{
+        max-width: 50%;
+        margin-left: -1%;
+    }
+
+    .copyright-text h2{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 453px) {
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        height: 130px;
+    }
+
+    .copyright-text{
+        max-width: 80%;
+        margin-left: auto;
+    }
+
+    .copyright-social-media{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .copyright-text{
+        max-width: 90%;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .copyright-text{
+        max-width: 95%;
+        margin-left: auto;
+    }
+} 

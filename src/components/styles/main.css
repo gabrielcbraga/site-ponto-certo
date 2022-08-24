@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #202020;
+    --black_light: #3B3B3B;
+    --black_dark: #080808;
+    --white: #F0F0F0;
+    --white_light: #D6D6D6;
+    --white_dark: #FFFFFF;
+    --red: #C21C34;
+    --red_light: #E1324B;
+    --red_dark: #981629;
+
+    --font_hindi: 'Hind', sans-serif;
+    --font_montserrat: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* IMG */
+
+.main-bg-image img{
+    width: 100%;
+    height: 535px;
+    filter: brightness(0.30);
+}
+
+/* TEXT */
+
+.main-text{
+    position: absolute;
+    max-width: 47%;
+    margin-left: 25%;
+    margin-top: -200px;
+    text-align: center;
+}
+
+.main-text h2{
+    color: var(--white);
+    font-family: var(--font_montserrat);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+/* BUTTON */
+
+.main-button {
+    position: absolute;
+	background-color: var(--red);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: var(--font_montserrat);
+	font-size: 1.1rem;
+	font-weight: 300;
+	padding:16px 76px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #ffffff;
+    margin-left: 36%;
+    margin-top: 220px;
+    transition: all 0.25s ease-in-out;
+}
+
+.main-button:hover {
+	background-color: var(--red_dark);
+}
+
+.main-button:active {
+    background-color: var(--red_light);
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 1030px) {
+    .main-button {
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .main-text{
+        max-width: 70%;
+        margin-left: 15%;
+    }
+
+    .main-text h2{
+        font-size: 1.9rem;
+    }
+
+    .main-button {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .main-button {
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .main-text{
+        max-width: 70%;
+        margin-left: 15%;
+    }
+
+    .main-text h2{
+        font-size: 1.8rem;
+    }
+
+    .main-button {
+        margin-left: 26%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .main-text{
+        max-width: 80%;
+        margin-left: 11%;
+    }
+
+    .main-text h2{
+        font-size: 1.7rem;
+    }
+
+    .main-button {
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .main-text{
+        max-width: 80%;
+        margin-left: 11%;
+    }
+
+    .main-text h2{
+        font-size: 1.7rem;
+    }
+
+    .main-button {
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-text{
+        max-width: 90%;
+        margin-left: 5.5%;
+    }
+
+    .main-text h2{
+        font-size: 1.6rem;
+    }
+
+    .main-button {
+        margin-left: 3.2%;
+        font-size: 0.9rem;
+        padding: 16px 70px;
+    }
+}
+
+
+
+
+
+
+

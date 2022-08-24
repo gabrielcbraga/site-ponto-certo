@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #202020;
+    --black_light: #3B3B3B;
+    --black_dark: #080808;
+    --white: #F0F0F0;
+    --white_light: #D6D6D6;
+    --white_dark: #FFFFFF;
+    --red: #C21C34;
+    --red_light: #E1324B;
+    --red_dark: #981629;
+
+    --font_hindi: 'Hind', sans-serif;
+    --font_montserrat: 'Montserrat', sans-serif;
+}
+
+.galery-container{
+    margin-top: 20px;
+    background-color: var(--black);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.galery-text{
+    margin-top: -100px;
+    margin-bottom: 50px;
+    margin-left: 2%;
+
+}
+
+.galery-text h2{
+    font-family: var(--font_montserrat);
+    font-weight: 500;
+    color: var(--white);
+    padding-top: -50px;
+}
+
+.container-style{
+    width: 720px;
+    height: 341px; 
+    margin: 0 auto;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 781px) {
+    .galery-container{
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .container-style{
+        width: 612px;
+        height: 290px; 
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    .container-style{
+        width: 530px;
+        height: 247px; 
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container-style{
+        width: 450px;
+        height: 210px; 
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .container-style{
+        width: 383px;
+        height: 210px; 
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .container-style{
+        width: 326px;
+        height: 179px; 
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .container-style{
+        width: 277px;
+        height: 152px; 
+    }
+}

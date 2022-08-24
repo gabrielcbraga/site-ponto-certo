@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --black: #202020;
+    --black_light: #3B3B3B;
+    --black_dark: #080808;
+    --white: #F0F0F0;
+    --white_light: #D6D6D6;
+    --white_dark: #FFFFFF;
+    --red: #C21C34;
+    --red_light: #E1324B;
+    --red_dark: #981629;
+
+    --font_hindi: 'Hind', sans-serif;
+    --font_montserrat: 'Montserrat', sans-serif;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+}
+
+/* IMAGE */
+
+.about-image{
+    width: 320px;
+    height: 540px;
+    margin-left: 4%;
+    margin-top: 85px;
+}
+
+.about-image img{
+    width: 480px;
+    height: 480px;
+}
+
+/* TEXT */
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-left: 17%;
+    margin-top: 110px;
+}
+
+.about-text-header p{
+    text-transform: uppercase;
+    color: var(--red);
+    font-family: var(--font_montserrat);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.about-text-header h2{
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: var(--font_montserrat);
+    font-weight: 100;
+    font-size: 2.7rem;
+    padding-bottom: 10px;
+}
+
+.about-text-divider{
+    padding-bottom: 20px;
+}
+
+.about-text-paragraph p{
+    font-family: var(--font_hindi);
+    font-size: 1.2rem;
+}
+
+.about-text-paragraph p:first-child{
+    padding-bottom: 30px;
+}
+
+/* BOTÃO */
+
+.about-button {
+    position: absolute;
+	background-color: var(--red);
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: var(--font_montserrat);
+	font-size: 1.1rem;
+	font-weight: 300;
+	padding:16px 76px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #ffffff;
+    transition: all 0.25s ease-in-out;
+    margin-top: 400px;
+}
+
+.about-button:hover {
+	background-color: var(--red_dark);
+}
+
+.about-button:active {
+    background-color: var(--red_light);
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 1080px) {
+    .about-button{
+        margin-top: 420px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .about-image{
+        margin-left: 2%;
+    } 
+
+    .about-text{
+        margin-top: 80px;
+        margin-left: 23%;
+        width: 40%
+    }
+
+    .about-button{
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .about-button{
+        margin-top: 475px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .about{
+        margin-bottom: 130px;
+    }
+
+    .about-image{
+        display: none;
+    }
+
+    .about-text{
+        margin-top: 60px;
+        margin-left: 12%;
+        width: 80%;
+    }
+
+    .about-button{
+        margin-top: 400px;
+    }
+}
+ 
+@media screen and (max-width: 780px){
+    .about-image{
+        display: none;
+    }
+
+    .about-text{
+        margin-top: 60px;
+        margin-left: 12%;
+        width: 80%;
+    }
+
+    .about-button{
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .about-button{
+        margin-top: 460px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-button{
+        margin-top: 480px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about-text{
+        margin-left: 7%;
+    }
+
+    .about-button{
+        margin-top: 525px;
+        margin-left: -0.5%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .about-text{
+        margin-left: 8%;
+    }
+
+    .about-text-header h2{
+        font-size: 2.4rem;
+    }
+
+    .about-button{
+        margin-top: 530px;
+        margin-left: -2.5%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .about-button{
+        margin-top: 560px;
+        margin-left: -2.5%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .about-text{
+        margin-left: 6%;
+    }
+
+    .about-text-header h2{
+        font-size: 2.4rem;
+    }
+
+    .about-button{
+        margin-top: 530px;
+        margin-left: -2.5%;
+    }
+
+    .about-text-header p{
+        font-size: 0.9rem;
+    }
+    
+    .about-text-header h2{
+        font-size: 2.1rem;
+    }
+    
+    .about-text-paragraph p{
+        font-size: 1.1rem;
+    }
+
+    .about-button{
+        margin-left: -2%;
+        font-size: 0.9rem;
+        padding: 16px 70px;
+    }
+}
