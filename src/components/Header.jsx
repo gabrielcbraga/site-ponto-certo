@@ -22,7 +22,6 @@ const Header = () => {
                         duration={700}
                     >SOBRE NÓS </Link></a>
                     <a href=""><Link
-                    style={{paddingLeft: 0}}
                     to="galery"
                     spy={true}
                     smooth={true}
